@@ -5,18 +5,48 @@
 <link rel="stylesheet" href="stylesheets/style.css">
 
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<!-- Logo Script -->
+<script type="text/javascript">
+        $(document).ready(function(){
+           // set up hover panels
+           // although this can be done without JavaScript, we've attached these events
+          // because it causes the hover to be triggered when the element is tapped on a touch device
+        $('.hover').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    });
+ </script>
+ <!-- end logo script -->
 <title>PORTFOLIO</title>
+<a href="resume.html">Resume</a>
 
 
 </head>
 
 <body>
 	<div>
-        <div>THIS IS MY PORTFOLIO</div>
+        <div>Jeivar</div>
         <p>ADD CONTENT</p></br>
         <p>ADD MORE CONTENT</p>
   </div>
 
+<!-- Adding a Logo -->
+
+<div class="hover logo">
+    <div class="front">
+        <div class="pad">
+            <p>Add logo-image-front here</p>
+        </div>
+    </div>
+    <div class="back">
+        <div class="pad">
+            <p>Add logo-image-back here</p>
+        </div>
+    </div>
+</div>
+<!-- End Logo -->
 
 </body>
 </html>
